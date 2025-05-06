@@ -1,0 +1,202 @@
+.confirmation-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.confirmation-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.confirmation-header h1 {
+  color: #495E57;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.confirmation-code {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.confirmation-code span {
+  font-weight: bold;
+  color: #495E57;
+  letter-spacing: 1px;
+}
+
+/* Checkmark Animation */
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px rgba(75, 183, 27, 0.1);
+  }
+}
+
+/* Error state */
+.confirmation-page.error {
+  text-align: center;
+}
+
+.confirmation-page.error h1 {
+  color: #d32f2f;
+}
+
+/* Detail sections */
+.reservation-details, 
+.contact-info, 
+.restaurant-info,
+.additional-info {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.reservation-details h2, 
+.contact-info h2, 
+.restaurant-info h2 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.detail-label {
+  flex: 0 0 30%;
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-value {
+  flex: 0 0 70%;
+}
+
+.restaurant-info p,
+.additional-info p {
+  margin-bottom: 0.5rem;
+}
+
+.additional-info {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-bottom: none;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.action-button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button.modify {
+  background-color: #F4CE14;
+  color: #333;
+}
+
+.action-button.modify:hover,
+.action-button.modify:focus {
+  background-color: #e9c404;
+  outline: none;
+}
+
+.action-button.cancel {
+  background-color: #f8f8f8;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+
+.action-button.cancel:hover,
+.action-button.cancel:focus {
+  background-color: #fff0f0;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .confirmation-container {
+    padding: 1.5rem;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    margin-bottom: 0.25rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-button {
+    margin-bottom: 0.5rem;
+  }
+}

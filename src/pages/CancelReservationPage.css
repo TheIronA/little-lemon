@@ -1,0 +1,230 @@
+.cancel-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cancel-page h1 {
+  color: #495E57;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.cancel-form-container,
+.reservation-details-container,
+.cancellation-success {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.instructions {
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #495E57;
+  box-shadow: 0 0 0 2px rgba(73, 94, 87, 0.2);
+}
+
+.error-message {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.find-button,
+.cancel-button,
+.back-button,
+.home-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+}
+
+.find-button {
+  background-color: #495E57;
+  color: white;
+}
+
+.find-button:hover:not(:disabled),
+.find-button:focus:not(:disabled) {
+  background-color: #3e4e48;
+  outline: none;
+}
+
+.find-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Reservation details styling */
+.reservation-details-container h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F4CE14;
+}
+
+.reservation-details {
+  margin-bottom: 2rem;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.detail-label {
+  flex: 0 0 30%;
+  font-weight: 600;
+  color: #666;
+}
+
+.detail-value {
+  flex: 0 0 70%;
+}
+
+.cancellation-warning {
+  background-color: #fff9f9;
+  border-left: 4px solid #d32f2f;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cancellation-warning p {
+  color: #d32f2f;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.back-button {
+  background-color: #eee;
+  color: #333;
+  flex: 1;
+}
+
+.back-button:hover,
+.back-button:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.cancel-button {
+  background-color: #d32f2f;
+  color: white;
+  flex: 1;
+}
+
+.cancel-button:hover:not(:disabled),
+.cancel-button:focus:not(:disabled) {
+  background-color: #b71c1c;
+  outline: none;
+}
+
+.cancel-button:disabled {
+  background-color: #e57373;
+  cursor: not-allowed;
+}
+
+/* Success State */
+.cancellation-success {
+  text-align: center;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 3rem;
+  background-color: #66bb6a;
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+.cancellation-success h2 {
+  color: #388e3c;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.cancellation-success p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.email-notice {
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+.home-button {
+  background-color: #F4CE14;
+  color: #333;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.home-button:hover,
+.home-button:focus {
+  background-color: #e9c404;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cancel-form-container,
+  .reservation-details-container,
+  .cancellation-success {
+    padding: 1.5rem;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    margin-bottom: 0.25rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+} 

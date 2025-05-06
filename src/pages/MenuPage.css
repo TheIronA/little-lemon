@@ -1,0 +1,140 @@
+.menu-page {
+  padding-bottom: 3rem;
+}
+
+.menu-hero {
+  background-color: #495e57;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), 
+                    url('https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #f4ce14;
+  font-family: 'Markazi Text', serif;
+}
+
+.menu-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.menu-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 80px; /* For smooth scrolling to sections */
+}
+
+.category-title {
+  color: #495e57;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #f4ce14;
+  padding-bottom: 0.5rem;
+  font-family: 'Markazi Text', serif;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+  height: 100%;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-item-image img {
+  transform: scale(1.1);
+}
+
+.menu-item-content {
+  padding: 1.5rem;
+  background-color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item-header h3 {
+  color: #495e57;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.item-price {
+  color: #f4ce14;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.item-description {
+  color: #555;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .menu-hero {
+    padding: 4rem 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .menu-hero h1 {
+    font-size: 3.5rem;
+  }
+} 

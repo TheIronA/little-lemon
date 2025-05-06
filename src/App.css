@@ -1,3 +1,11 @@
+/* Global Styles or App Container */
+body {
+  font-family: 'Karla', sans-serif;
+  margin: 0; /* Ensure no default margin */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%; /* Increase horizontal padding */
+  background-color: #FFFFFF; /* Change background to white */
+  color: #333333; /* Default text color for the header */
+  border-bottom: 1px solid #eee; /* Add a subtle border */
+}
+
+.logo-container a {
+  text-decoration: none;
+  display: inline-block; /* Ensure link wraps image correctly */
+}
+
+/* Remove h1 styles */
+/* .logo-container h1 {
+  color: #F4CE14; 
+  margin: 0;
+  font-size: 1.8rem;
+} */
+
+/* Add styles for the logo image */
+.header-logo {
+  height: 40px; /* Adjust height as needed */
+  width: auto;
+  display: block; /* Prevent extra space below image */
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 1.5rem;
+}
+
+.nav-menu a {
+  color: #495E57; /* Change link color to primary green */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: 'Karla', sans-serif; /* Explicitly set Karla for nav links */
+}
+
+.nav-menu a:hover {
+  color: #F4CE14; /* Change hover color to primary yellow */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .logo-container {
+    margin-bottom: 1rem;
+  }
+  
+  .nav-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-menu li {
+    margin: 0.5rem;
+  }
+} 
