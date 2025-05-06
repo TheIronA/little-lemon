@@ -62,8 +62,8 @@ const HomePage = () => {
               </div>
               <div className="card-content">
                 <h3>Greek Salad</h3>
-                <p>$12.99</p>
-                <p>The famous Greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                <p>£13.50</p>
+                <p>The famous Greek salad of crispy lettuce, peppers, olives and our London style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
                 <a href="#" className="order-link" aria-label="Order Greek Salad">Order a delivery</a>
               </div>
             </div>
@@ -77,7 +77,7 @@ const HomePage = () => {
               </div>
               <div className="card-content">
                 <h3>Bruschetta</h3>
-                <p>$9.99</p>
+                <p>£9.50</p>
                 <p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
                 <a href="#" className="order-link" aria-label="Order Bruschetta">Order a delivery</a>
               </div>
@@ -92,7 +92,7 @@ const HomePage = () => {
               </div>
               <div className="card-content">
                 <h3>Lemon Dessert</h3>
-                <p>$5.99</p>
+                <p>£7.50</p>
                 <p>This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p>
                 <a href="#" className="order-link" aria-label="Order Lemon Dessert">Order a delivery</a>
               </div>
@@ -124,7 +124,7 @@ const HomePage = () => {
               />
             </div>
             <div className="rating">★★★★★</div>
-            <p>"Best Mediterranean food in Chicago. The reservation system was very convenient."</p>
+            <p>"Best Mediterranean food in London. The reservation system was very convenient."</p>
             <div className="customer-name">- Mark T.</div>
           </div>
           
