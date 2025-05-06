@@ -43,6 +43,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+  font-family: 'Karla', sans-serif;
 }
 
 .form-group input:focus {
@@ -69,6 +70,7 @@
   transition: background-color 0.3s ease;
   display: block;
   width: 100%;
+  font-family: 'Karla', sans-serif;
 }
 
 .find-button {

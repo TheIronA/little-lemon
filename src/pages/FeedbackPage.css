@@ -36,6 +36,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
+  font-family: 'Karla', sans-serif;
 }
 
 .form-group input:focus,
@@ -65,6 +66,7 @@
   display: flex;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  justify-content: center;
 }
 
 .star {
@@ -109,6 +111,7 @@
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
+  font-family: 'Karla', sans-serif;
 }
 
 .submit-button:hover:not(:disabled),
@@ -167,6 +170,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: 'Karla', sans-serif;
 }
 
 .home-button:hover,
